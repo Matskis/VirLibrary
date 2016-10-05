@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="universitblaisepascal.virlibrary.AjoutLivreActivity"
+    tools:showIn="@layout/activity_ajout_livre">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisir comment retourvé votre livre"
+        android:id="@+id/textView21"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:theme="@style/textTitres_UE"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_trouver_isbn_ajout_livre"
+        android:id="@+id/buttonChoixIsbnAjoutLivre"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text_trouver_titre_ajout_livre"
+        android:id="@+id/buttonChoixTitreAjoutLivre"
+        android:layout_alignTop="@+id/buttonChoixIsbnAjoutLivre"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_trouver_isbn_ajout_livre"
+        android:id="@+id/textViewTrouverIsbnTitle"
+        android:layout_below="@+id/buttonChoixIsbnAjoutLivre"
+        android:layout_alignRight="@+id/buttonChoixTitreAjoutLivre"
+        android:layout_alignEnd="@+id/buttonChoixTitreAjoutLivre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:theme="@style/textTitres_UE"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputIsbnAjoutLivre"
+        android:layout_below="@+id/textViewTrouverIsbnTitle"
+        android:layout_alignRight="@+id/textViewTrouverIsbnTitle"
+        android:layout_alignEnd="@+id/textViewTrouverIsbnTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Indiquez l&apos;ISBN du livre"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text_trouver_titre_ajout_livre"
+        android:id="@+id/textViewTrouverTitreTitle"
+        android:layout_below="@+id/buttonChoixIsbnAjoutLivre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/inputIsbnAjoutLivre"
+        android:layout_alignEnd="@+id/inputIsbnAjoutLivre"
+        android:theme="@style/textTitres_UE"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputTitreAjoutLivre"
+        android:layout_below="@+id/textViewTrouverTitreTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textViewTrouverTitreTitle"
+        android:layout_alignEnd="@+id/textViewTrouverTitreTitle"
+        android:hint="Indiquez le titre du livre"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rechercher le livre"
+        android:id="@+id/buttonRechercherLivreAjoutLivre"
+        android:layout_below="@+id/inputTitreAjoutLivre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Séléctionner le livre que vous souhaitez ajouté à votre biblihotéque"
+        android:id="@+id/textViewSelectionLivreAjoutLivre"
+        android:layout_below="@+id/buttonRechercherLivreAjoutLivre"
+        android:theme="@style/textTitres_UE"
+        android:layout_marginTop="10dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewListLivreRechercherAjoutLivre"
+        android:layout_below="@+id/textViewSelectionLivreAjoutLivre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="universitblaisepascal.virlibrary.Inscription3Activity"
+    tools:showIn="@layout/activity_inscription3">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/inputDateNaissInscription"
+        android:hint="@string/inputTxtDateNaissInscription3"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/buttonValiderInscription"
+        android:layout_alignEnd="@+id/buttonValiderInscription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:theme="@style/textCellule" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/inputTelephoneInscription"
+        android:hint="@string/inputTxtTelephoneInscription3"
+        android:textAlignment="center"
+        android:layout_below="@+id/inputDateNaissInscription"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/inputDateNaissInscription"
+        android:layout_alignEnd="@+id/inputDateNaissInscription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:theme="@style/textCellule" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inscription_bouton_annuler"
+        android:id="@+id/buttonAnnulerInscription3"
+        android:layout_below="@+id/spinnerInscription3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:theme="@style/boutonB" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_inscription_Retour"
+        android:id="@+id/buttonRetourInscription3"
+        android:layout_alignTop="@+id/buttonAnnulerInscription3"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/boutonB" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_inscription_Valider"
+        android:id="@+id/buttonValiderInscription"
+        android:layout_alignTop="@+id/buttonRetourInscription3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:theme="@style/boutonB" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerInscription3"
+        android:layout_below="@+id/textViewSexeInscription3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:layout_alignRight="@+id/inputTelephoneInscription"
+        android:layout_alignEnd="@+id/inputTelephoneInscription"
+        android:theme="@style/textCellule" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSexeInscription3"
+        android:id="@+id/textViewSexeInscription3"
+        android:layout_below="@+id/inputTelephoneInscription"
+        android:layout_alignRight="@+id/inputTelephoneInscription"
+        android:layout_alignEnd="@+id/inputTelephoneInscription"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_action_bar_content_inset_material"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:theme="@style/textCellule" />
+</RelativeLayout>

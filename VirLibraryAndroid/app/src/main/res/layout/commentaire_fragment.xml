@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    style="@style/Transparent">
+
+    <TextView
+        android:id="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        tools:text="Titre"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pseudo_utilisateur_vue_livre_fragment"
+        android:id="@+id/idUserCommentaireVueLivreFragment"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description_evenement_fragment_evenement"
+        android:id="@+id/txtPrixAjoutLivreFinal"
+        android:layout_below="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_alignLeft="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_alignStart="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Commentaire"
+        android:id="@+id/textViewDateCommentaireVueLivreFragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

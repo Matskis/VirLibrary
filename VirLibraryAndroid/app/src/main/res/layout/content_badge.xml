@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="universitblaisepascal.virlibrary.BadgeActivity"
+    tools:showIn="@layout/activity_badge">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Badge Acquis"
+        android:id="@+id/textViewTitreBadgeAcquiBadge"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/textTitres_UE" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridViewTitreBadgeAcquiBadge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="30dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@+id/textViewTitreBadgeAcquiBadge"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTitreBadgeAcquisBadge"
+        android:layout_below="@+id/gridViewTitreBadgeAcquiBadge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Badge Non acquis"
+        style="@style/textTitres_UE"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridViewBadgeNonAcquiBadge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="30dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_below="@+id/editTextTitreBadgeAcquisBadge"/>
+    </RelativeLayout>
+</ScrollView>

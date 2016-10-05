@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    style="@style/Transparent">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        tools:background="#AAA"
+        />
+
+    <TextView
+        android:id="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_alignTop="@+id/avatar"
+        android:textStyle="bold"
+        tools:text="Titre"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prix_livre_activty_nouveau_livre"
+        android:id="@+id/txtPrixAjoutLivreFinal"
+        android:layout_below="@+id/isbn_livre_fragment"
+        android:layout_alignLeft="@+id/isbn_livre_fragment"
+        android:layout_alignStart="@+id/isbn_livre_fragment"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ISBN_activity_nouveau_livre2"
+        android:id="@+id/isbn_livre_fragment"
+        android:layout_below="@+id/auteur_livre_fragment"
+        android:layout_alignLeft="@+id/auteur_livre_fragment"
+        android:layout_alignStart="@+id/auteur_livre_fragment"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_edition_activity_nouveau_livre2"
+        android:id="@+id/date_edition_livre_fragment"
+        android:layout_alignTop="@+id/edition_livre_fragment"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edition_livre_activty_nouveau_livre"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/avatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edition_livre_activty_nouveau_livre"
+        android:id="@+id/edition_livre_fragment"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_alignLeft="@+id/txtPrixAjoutLivreFinal"
+        android:layout_alignStart="@+id/txtPrixAjoutLivreFinal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nomAuteurNouveauLivre"
+        android:id="@+id/auteur_livre_fragment"
+        android:layout_below="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_alignLeft="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_alignStart="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devise"
+        android:id="@+id/textViewDeviseLivreFragment"
+        android:layout_alignTop="@+id/txtPrixAjoutLivreFinal"
+        android:layout_toRightOf="@+id/txtPrixAjoutLivreFinal"
+        android:layout_toEndOf="@+id/txtPrixAjoutLivreFinal"
+        android:layout_marginLeft="3dp" />
+
+</RelativeLayout>

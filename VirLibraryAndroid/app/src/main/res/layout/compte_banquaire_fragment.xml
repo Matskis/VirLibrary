@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    style="@style/Transparent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtview_proprio_carte_banquaire_fragment"
+        android:id="@+id/textViewProprioCompteBanquaireFragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtview_num_compte_carte_banquaire_fragment"
+        android:layout_below="@+id/textViewProprioCompteBanquaireFragment"
+        android:id="@+id/textViewNumCompteCompteBanquaireFragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtview_iban_compte_banquaire_fragment"
+        android:layout_below="@+id/textViewNumCompteCompteBanquaireFragment"
+        android:id="@+id/textViewIBANCarteBanquaireFragment" />
+</RelativeLayout>

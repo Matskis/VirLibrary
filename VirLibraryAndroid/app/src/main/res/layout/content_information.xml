@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="universitblaisepascal.virlibrary.InformationActivity"
+    tools:showIn="@layout/activity_information">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_information"
+        android:id="@+id/textViewText_Information"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:textSize="@dimen/abc_text_size_button_material" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewAngularJS"
+        android:src="@drawable/logo_angular_js"
+        android:contentDescription="logo_angularjs"
+        android:layout_alignTop="@+id/textViewText_Information"
+        android:layout_toRightOf="@+id/textViewText_Information"
+        android:layout_toEndOf="@+id/textViewText_Information" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewAndroid"
+        android:layout_below="@+id/imageViewAngularJS"
+        android:layout_toRightOf="@+id/textViewText_Information"
+        android:layout_toEndOf="@+id/textViewText_Information"
+        android:src="@drawable/logo_android"
+        android:layout_marginTop="15dp"
+        android:contentDescription="logo_android" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewCss3"
+        android:layout_below="@+id/imageViewAndroid"
+        android:layout_toRightOf="@+id/textViewText_Information"
+        android:layout_toEndOf="@+id/textViewText_Information"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo_css3"
+        android:contentDescription="logo_css3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewHtml5"
+        android:layout_alignTop="@+id/imageViewAngularJS"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/logo_html5"
+        android:layout_marginTop="35dp"
+        android:contentDescription="logo_html5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewSymphony2"
+        android:layout_below="@+id/imageViewHtml5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/logo_symfony2"
+        android:layout_marginTop="10dp"
+        android:contentDescription="logo_symphony2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titre_information"
+        android:id="@+id/textViewTitreInformation"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textViewText_Information"
+        android:layout_alignStart="@+id/textViewText_Information"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size" />
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="universitblaisepascal.virlibrary.NouveauLivre2Activity"
+    tools:showIn="@layout/activity_nouveau_livre2">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputIsbnNouveauLivre"
+        android:layout_alignParentTop="true"
+        android:maxLines="1"
+        android:inputType="text"
+        android:hint="@string/ISBN_activity_nouveau_livre2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:theme="@style/textCellule" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSuivantNouveauLivre2"
+        android:hint="@string/inscription_bouton_suivant"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textViewEditeur"
+        android:layout_toEndOf="@+id/textViewEditeur"
+        android:layout_marginTop="30dp"
+        android:theme="@style/boutonB" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAnnulerNouveauLivre2"
+        android:textAlignment="center"
+        android:hint="@string/inscription_bouton_annuler"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:theme="@style/boutonB" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRetourNouveauLivre2"
+        android:hint="@string/title_activity_inscription_Retour"
+        android:textAlignment="center"
+        android:theme="@style/boutonB"
+        android:layout_alignTop="@+id/buttonSuivantNouveauLivre2"
+        android:layout_alignRight="@+id/textViewEditeur"
+        android:layout_alignEnd="@+id/textViewEditeur" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/inputDateEditionNouveauLivre"
+        android:layout_below="@+id/inputIsbnNouveauLivre"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:hint="@string/date_edition_activity_nouveau_livre2"
+        android:layout_alignRight="@+id/inputIsbnNouveauLivre"
+        android:layout_alignEnd="@+id/inputIsbnNouveauLivre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:theme="@style/textCellule" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEditeur"
+        android:textAlignment="center"
+        android:text="@string/editeur_activity_nouveau_livre2"
+        android:layout_below="@+id/inputDateEditionNouveauLivre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/abc_action_bar_content_inset_material"
+        android:textStyle="bold"
+        android:theme="@style/textCellule" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputNomEditeurNouveauLivre"
+        android:layout_below="@+id/textViewEditeur"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:hint="@string/nom_editeur_activity_nouveau_livre2"
+        android:layout_alignRight="@+id/inputDateEditionNouveauLivre"
+        android:layout_alignEnd="@+id/inputDateEditionNouveauLivre"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:theme="@style/textCellule" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/inputPaysEditeurNouveauLivre"
+        android:layout_below="@+id/inputNomEditeurNouveauLivre"
+        android:hint="@string/pays_editeur_activity_nouveau_livre2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:theme="@style/textCellule" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:text="@string/couverture_edition_activity_nouveau_livre2"
+        android:layout_below="@+id/inputPaysEditeurNouveauLivre"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_action_bar_content_inset_material"
+        android:theme="@style/textCellule"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

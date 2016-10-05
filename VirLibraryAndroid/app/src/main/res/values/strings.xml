@@ -1,0 +1,840 @@
+<resources>
+    <string name="app_name">VirLibrary</string>
+
+    <string name="navigation_drawer_open">Ouvrir le menu de naviguation</string>
+    <string name="navigation_drawer_close">Fermer le menu de naviguation</string>
+
+    <string name="action_settings">Paramètre</string>
+    <string name="title_activity_login">Connexion</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in">Connexion ou Inscription</string>
+    <string name="action_sign_in_short">Connexion</string>
+    <string name="error_invalid_email">Cette email est invalide.</string>
+    <string name="error_invalid_password">Le mot de passe est trop court.</string>
+    <string name="error_incorrect_password">Le mot de passe est incorrect.</string>
+    <string name="error_field_required">Ce champs est requis.</string>
+    <string name="permission_rationale">"L'autorisation des contacts est nécessaire pour envoyé un email."
+    </string>
+    <string name="title_activity_settings">Paramètre</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Général</string>
+    <string name="pref_livre_titre">Gestion de vos livres</string>
+    <string name="pref_livre_titre_partage">Partage de vos livres</string>
+    <string name="livre_pref_manage">Manager</string>
+    <string name="livre_pref_repartager">Authorisé le partage par d\'autre utilisateur</string>
+    <string-array name="livre_pref_manage">
+        <item>Toujours</item>
+        <item>Parfois</item>
+        <item>Jamais</item>
+    </string-array>
+    <string name="pref_livre_duree_max">Durée maximum d\'un prêt</string>
+    <string-array name="pref_livre_duree_titles">
+        <item>1 jour</item>
+        <item>2 jours</item>
+        <item>3 jours</item>
+        <item>4 jours</item>
+        <item>5 jours</item>
+        <item>6 jours</item>
+        <item>1 semaine</item>
+        <item>2 semaines</item>
+        <item>3 semaines</item>
+    </string-array>
+    <string-array name="pref_livre_duree_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>14</item>
+        <item>21</item>
+    </string-array>
+    <string name="pref_livre_text_partage">Vous souhaitez que vos livre puissent être partagé.</string>
+    <string name="pref_title_social_recommendations">Activer recommandation social</string>
+    <string name="pref_description_social_recommendations">Recommandations pour les personnes à contacte en fonction de votre historique des messages
+    </string>
+
+    <string name="pref_title_display_name">Compte connecté</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Ajouter des amis aux messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Toujours</item>
+        <item>"Quand c'est possible"</item>
+        <item>Jamais</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Synchronisation des données</string>
+
+    <string name="pref_title_sync_frequency">Fréquence de synchronisation</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 heure</item>
+        <item>3 heures</item>
+        <item>6 heures</item>
+        <item>Jamais</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">Paramètres de synchronisation du système</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">Nouveau message de notifications</string>
+
+    <string name="pref_title_ringtone">Sonnerie</string>
+    <string name="pref_ringtone_silent">Silencieux</string>
+
+    <string name="pref_title_vibrate">Vibration</string>
+    <string name="title_activity_scrolling">Biblihotèque</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="title_activity_preference">Préférence</string>
+    <string name="title_activity_information">Information</string>
+    <string name="title_item_list">Compte</string>
+    <string name="title_item_detail">Comte Détail</string>
+    <string name="title_activity_inscription">Inscription</string>
+    <string name="username_activity_inscription">Pseudo</string>
+    <string name="nom_activity_inscription">Nom</string>
+    <string name="prenom_activity_inscription">Prénom</string>
+    <string name="email_activity_inscription">Email</string>
+    <string name="mdp_activity_inscription">Mot de passe</string>
+    <string name="inscription_bouton_suivant">Suivant</string>
+    <string name="inscription_bouton_annuler">Annuler</string>
+    <string name="title_activity_inscription2">Inscription Suite</string>
+    <string name="title_activity_inscription_Valider">Valider</string>
+    <string name="title_activity_inscription_Retour">Retour</string>
+    <string name="title_activity_inscription3">Suite Inscription</string>
+    <string name="titre_information">Projet Virlibrary</string>
+    <string name="text_information">
+        "Technologie :\n\n"
+
+        "AngularJs\n\n"
+        "Android\n\n"
+        "CSS3\n\n"
+        "HTML5\n\n"
+        "Symphony 2\n\n\n"
+
+        "Membre du groupe :\n\n"
+
+        "Btissam Chahid\n"
+        "Cyril Pannier\n"
+        "M'henni Koroghli\n"
+        "Moùhoùb's Med\n"
+        "Mounir Hamoudi\n"
+        "Rachid Jijane\n"
+        "Rémi Colas\n"
+    </string>
+    <string name="title_activity_nouveau_livre">Ajouté un Livre</string>
+    <string name="titre_livre_activty_nouveau_livre">Titre</string>
+    <string name="date_parution_livre_activty_nouveau_livre">Date de parution</string>
+    <string name="langue_livre_activty_nouveau_livre">Langue</string>
+    <string name="edition_livre_activty_nouveau_livre">Édition</string>
+    <string name="resume_livre_activty_nouveau_livre">Résumé du livre</string>
+    <string name="prix_livre_activty_nouveau_livre">Prix du livre</string>
+    <string name="devise_livre_activty_nouveau_livre">Devise du prix</string>
+    <string name="title_activity_nouveau_livre2">Ajouté un livre</string>
+    <string name="ISBN_activity_nouveau_livre2">ISBN du livre</string>
+    <string name="date_edition_activity_nouveau_livre2">Date de l\'édition</string>
+    <string name="couverture_edition_activity_nouveau_livre2">Couverture de l\'édition</string>
+    <string name="editeur_activity_nouveau_livre2">Information sur l\'éditeur</string>
+    <string name="nom_editeur_activity_nouveau_livre2">Nom de l\'éditeur</string>
+    <string name="pays_editeur_activity_nouveau_livre2">Pays de l\'éditeur</string>
+    <string name="title_activity_nouveau_livre3">Ajouté un livre</string>
+    <string name="exemplaire_titre_activity_nouveau_livre3">Votre exemplaire</string>
+    <string name="exemplaire_nombre_activity_nouveau_livre3">Nombre d\'exemplaire</string>
+    <string name="exemplaire_date_achat_activity_nouveau_livre3">Date d\'achat de l\'exemplaire</string>
+    <string name="exemplaire_etat_activity_nouveau_livre3">État de l\'exemplaire</string>
+    <string name="exemplaire_pretable_oui_activity_nouveau_livre3">Oui</string>
+    <string name="exemplaire_pretable_non_activity_nouveau_livre3">Non</string>
+    <string name="menu_refresh">Rafraîchir</string>
+    <string name="texte_input_rechercher_search">Rechercher</string>
+    <string name="boutonRechercherSearch">bouton de recherche dans rechercher</string>
+    <string name="boutonCloseSearch">boutonCloseSearch</string>
+    <string name="txtSexeInscription3">Sexe</string>
+    <string name="inputTitreLivreSearch">Titre du livre</string>
+    <string name="inputTxtTelephoneInscription3">Téléphone</string>
+    <string name="inputTxtDateNaissInscription3">Date de Naissance</string>
+    <string name="inputTxtAdresseInscription2">Adresse</string>
+    <string name="inputTxtAdresse2Inscription2">Complément d\'adresse</string>
+    <string name="inputTxtCpInscription2">Code Postal</string>
+    <string name="inputTxtVilleInscription2">Ville</string>
+    <string name="inputTxtPaysInscription2">Pays</string>
+    <string name="nomAuteurNouveauLivre">Auteur</string>
+    <string name="text_switch_pretable_nouveau_livre">Prêtable</string>
+    <string name="text_pretable_nouveau_livre">Souhaitez vous prêtez votre exemplaire</string>
+
+    <string-array name="sexe">
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="auteur">
+        <item>Alain-Fournier</item>
+        <item>Anouilh</item>
+        <item>Apollinaire</item>
+        <item>Aragon</item>
+        <item>Artaud</item>
+        <item>Audoux</item>
+        <item>Aymé</item>
+        <item>Balzac</item>
+        <item>Barbey d\'Aurevilly</item>
+        <item>Barthes</item>
+        <item>Bataille</item>
+        <item>Baudelaire</item>
+        <item>Bazin</item>
+        <item>Beaumarchais</item>
+        <item>Beauvoir</item>
+        <item>Beckett</item>
+        <item>Bernanos</item>
+        <item>Bernardin de Saint-Pierre</item>
+        <item>Blanchot</item>
+        <item>Boileau</item>
+        <item>Boisrouvray</item>
+        <item>Bossuet</item>
+        <item>Brasillach</item>
+        <item>Breton</item>
+        <item>Camus</item>
+        <item>Céline</item>
+        <item>Cendrars</item>
+        <item>Char</item>
+        <item>Chardonne</item>
+        <item>Chateaubriand </item>
+        <item>Cioran</item>
+        <item>Claudel</item>
+        <item>Cocteau</item>
+        <item>Colette</item>
+        <item>Constant</item>
+        <item>Corneille</item>
+        <item>Cros</item>
+        <item>Courteline</item>
+        <item>Dard</item>
+        <item>Daudet</item>
+        <item>Daumal</item>
+        <item>Descartes</item>
+        <item>Desnos</item>
+        <item>Diderot</item>
+        <item>Drieu la Rochelle</item>
+        <item>Du Bellay</item>
+        <item>Duhamel</item>
+        <item>Dumas</item>
+        <item>Dumas (Fils)</item>
+        <item>Duras</item>
+        <item>Eberhardt</item>
+        <item>Erckmann et Chatrian</item>
+        <item>Eluard</item>
+        <item>Fénelon</item>
+        <item>Feydeau</item>
+        <item>Flaubert</item>
+        <item>Frison-Roche</item>
+        <item>Furet</item>
+        <item>Gadenne</item>
+        <item>Gary</item>
+        <item>Gautier</item>
+        <item>Genet</item>
+        <item>Genevoix</item>
+        <item>Gide</item>
+        <item>Giono</item>
+        <item>Giraudoux</item>
+        <item>Green</item>
+        <item>Guibert</item>
+        <item>Hallier</item>
+        <item>Heredia</item>
+        <item>Hugo</item>
+        <item>Ionesco</item>
+        <item>Jardin</item>
+        <item>Kessel</item>
+        <item>Koltes</item>
+        <item>La Bruyère</item>
+        <item>La Fayette</item>
+        <item>La Fontaine </item>
+        <item>Laforgue</item>
+        <item>La Rochefoucauld</item>
+        <item>Laclos</item>
+        <item>Lamartine</item>
+        <item>Lautréamont</item>
+        <item>Lorrain</item>
+        <item>Loti</item>
+        <item>Malherbe</item>
+        <item>Mallarmé</item>
+        <item>Malot</item>
+        <item>Malraux</item>
+        <item>Marivaux</item>
+        <item>Martin du Gard</item>
+        <item>Maupassant</item>
+        <item>Mauriac François</item>
+        <item>Mauriac Claude</item>
+        <item>Maurois</item>
+        <item>Mérimée</item>
+        <item>Michaux</item>
+        <item>Michelet</item>
+        <item>Mirbeau</item>
+        <item>Molière</item>
+        <item>Monnier</item>
+        <item>Montaigne</item>
+        <item>Montesquieu</item>
+        <item>Montherlant</item>
+        <item>Musset</item>
+        <item>Nerval</item>
+        <item>Nimier</item>
+        <item>Noailles</item>
+        <item>Pagnol</item>
+        <item>Pascal</item>
+        <item>Péguy</item>
+        <item>Perec</item>
+        <item>Perrault</item>
+        <item>Ponge</item>
+        <item>Prévert</item>
+        <item>Prevost</item>
+        <item>Proust</item>
+        <item>Queneau</item>
+        <item>Rabelais</item>
+        <item>Racine</item>
+        <item>Radiguet</item>
+        <item>Renard</item>
+        <item>Restif de la Bretonne</item>
+        <item>Reverdy</item>
+        <item>Reverzy</item>
+        <item>Rimbaud</item>
+        <item>Rolland</item>
+        <item>Rolland</item>
+        <item>Ronsard</item>
+        <item>Rostand</item>
+        <item>Rousseau</item>
+        <item>Sade</item>
+        <item>Sainte-Beuve</item>
+        <item>Saint-Exupéry</item>
+        <item>Saint-John Perse</item>
+        <item>Saint-Pierre</item>
+        <item>Saint-Simon</item>
+        <item>Sand</item>
+        <item>Sarraute</item>
+        <item>Sartre</item>
+        <item>Sevigne</item>
+        <item>Staël</item>
+        <item>Stendhal</item>
+        <item>Tardieu</item>
+        <item>Valéry</item>
+        <item>Vallès</item>
+        <item>Verlaine</item>
+        <item>Verne</item>
+        <item>Vian</item>
+        <item>Vigny</item>
+        <item>Villon</item>
+        <item>Voltaire</item>
+        <item>Yourcenar</item>
+        <item>Zola</item>
+    </string-array>
+    <string-array name="categorie">
+        <item>BD-jeunesse</item>
+        <item>Littérature</item>
+        <item>Fiction</item>
+        <item>Art culture</item>
+        <item>Vie-pratique</item>
+        <item>Loisir</item>
+        <item>Scolaire et université</item>
+        <item>Savoir</item>
+        <item>Publication</item>
+    </string-array>
+    <string-array name="sous_cat_bd_jeunesse">
+        <item>BD-humour</item>
+        <item>Manga</item>
+        <item>Livre Jeunesse</item>
+        <item>Livre adolescent</item>
+    </string-array>
+    <string-array name="sous_cat_litterature">
+        <item>Roman et nouvelle</item>
+        <item>Poésie et théatre</item>
+        <item>Lettre</item>
+    </string-array>
+    <string-array name="sous_cat_fiction">
+        <item>Roman policier thriller</item>
+        <item>Science_fiction</item>
+        <item>Fantaisie</item>
+    </string-array>
+    <string-array name="sous_cat_art_culture">
+        <item>Actualité et politique</item>
+        <item>Économie</item>
+        <item>Art</item>
+        <item>Biographie</item>
+        <item>Histoire</item>
+        <item>Religion</item>
+    </string-array>
+    <string-array name="sous_cat_vie_pratique">
+        <item>Érotisme</item>
+        <item>Cuisine</item>
+        <item>Santé</item>
+        <item>Décoration</item>
+    </string-array>
+    <string-array name="sous_cat_loisir">
+        <item>Nature</item>
+        <item>Animaux</item>
+        <item>Jardin</item>
+        <item>Sport</item>
+        <item>Tourisme</item>
+    </string-array>
+    <string-array name="sous_cat_scolaire_universite">
+        <item>Manuel scolaire</item>
+        <item>Soutien scolaire</item>
+    </string-array>
+    <string-array name="sous_cat_savoir">
+        <item>Dictionnaire</item>
+        <item>Droit</item>
+        <item>Entreprise et management</item>
+        <item>Science et médecine</item>
+        <item>Information</item>
+    </string-array>
+    <string-array name="sous_cat_publication">
+        <item>Science</item>
+    </string-array>
+
+    <string name="title_activity_compte">Compte</string>
+    <string name="pseudo_txtview_compte">Pseudo :</string>
+    <string name="txtview_nom_compte">Nom :</string>
+    <string name="txtview_prenom_compte">Prénom :</string>
+    <string name="txtview_email_commpte">Email :</string>
+    <string name="txtview_sexe_compte">Sexe :</string>
+    <string name="txtview_date_creation_compte">Date de création :</string>
+    <string name="txtview_date_naissance_compte">Date de naissance :</string>
+    <string name="txtview_statut_compte">Statut du compte :</string>
+    <string name="txtview_telephone_compte">Numéro de téléphone :     </string>
+    <string name="txtview_reputation_compte">Point de réputation :</string>
+    <string name="txtview_adresse_compte">Adresse :</string>
+    <string name="txtview_cp_compte">Code Postale :</string>
+    <string name="txtview_pays_compte">Pays :</string>
+    <string name="pseudo_nav_header">Pseudo :</string>
+    <string name="email_nav_header">android.studio@android.com</string>
+    <string name="txtview_ville_compte">Ville :</string>
+
+    <string-array name="pays">
+        <item>Afghanistan</item>
+        <item>Afrique du Sud</item>
+        <item>Albanie</item>
+        <item>Algérie</item>
+        <item>Allemagne</item>
+        <item>Andorre</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctique</item>
+        <item>Antigua-et-Barbuda</item>
+        <item>Arabie saoudite</item>
+        <item>Argentine</item>
+        <item>Arménie</item>
+        <item>Aruba</item>
+        <item>Australie</item>
+        <item>Autriche</item>
+        <item>Azerbaïdjan</item>
+        <item>Bahamas</item>
+        <item>Bahreïn</item>
+        <item>Bangladesh</item>
+        <item>Barbade</item>
+        <item>Belgique</item>
+        <item>Belize</item>
+        <item>Bénin</item>
+        <item>Bermudes</item>
+        <item>Bhoutan</item>
+        <item>Biélorussie</item>
+        <item>Bolivie</item>
+        <item>Bosnie-Herzégovine</item>
+        <item>Botswana</item>
+        <item>Brésil</item>
+        <item>Brunéi Darussalam</item>
+        <item>Bulgarie</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodge</item>
+        <item>Cameroun</item>
+        <item>Canada</item>
+        <item>Cap-Vert</item>
+        <item>Ceuta et Melilla</item>
+        <item>Chili</item>
+        <item>Chine</item>
+        <item>Chypre</item>
+        <item>Colombie</item>
+        <item>Comores</item>
+        <item>Congo-Brazzaville</item>
+        <item>Congo-Kinshasa</item>
+        <item>Corée du Nord</item>
+        <item>Corée du Sud</item>
+        <item>Costa Rica</item>
+        <item>Côte d’Ivoire</item>
+        <item>Croatie</item>
+        <item>Cuba</item>
+        <item>Curaçao</item>
+        <item>Danemark</item>
+        <item>Diego Garcia</item>
+        <item>Djibouti</item>
+        <item>Dominique</item>
+        <item>Égypte</item>
+        <item>El Salvador</item>
+        <item>Émirats arabes unis</item>
+        <item>Équateur</item>
+        <item>Érythrée</item>
+        <item>Espagne</item>
+        <item>Estonie</item>
+        <item>Vatican</item>
+        <item>États fédérés de Micronésie</item>
+        <item>États-Unis</item>
+        <item>Éthiopie</item>
+        <item>Fidji</item>
+        <item>Finlande</item>
+        <item>France</item>
+        <item>Gabon</item>
+        <item>Gambie</item>
+        <item>Géorgie</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Grèce</item>
+        <item>Grenade</item>
+        <item>Groenland</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guernesey</item>
+        <item>Guinée</item>
+        <item>Guinée équatoriale</item>
+        <item>Guinée-Bissau</item>
+        <item>Guyana</item>
+        <item>Guyane française</item>
+        <item>Haïti</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hongrie</item>
+        <item>Île Christmas</item>
+        <item>Île de l’Ascension</item>
+        <item>Île de Man</item>
+        <item>Île Norfolk</item>
+        <item>Îles Åland</item>
+        <item>Îles Caïmans</item>
+        <item>Îles Canaries</item>
+        <item>Îles Cocos</item>
+        <item>Îles Cook</item>
+        <item>Îles Féroé</item>
+        <item>Îles Malouines</item>
+        <item>Îles Mariannes du Nord</item>
+        <item>Îles Marshall</item>
+        <item>Îles mineures éloignées des États-Unis</item>
+        <item>Îles Salomon</item>
+        <item>Îles Turques-et-Caïques</item>
+        <item>Îles Vierges britanniques</item>
+        <item>Îles Vierges des États-Unis</item>
+        <item>Inde</item>
+        <item>Indonésie</item>
+        <item>Irak</item>
+        <item>Iran</item>
+        <item>Irlande</item>
+        <item>Islande</item>
+        <item>Israël</item>
+        <item>Italie</item>
+        <item>Jamaïque</item>
+        <item>Japon</item>
+        <item>Jersey</item>
+        <item>Jordanie</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kirghizistan</item>
+        <item>Kiribati</item>
+        <item>Kosovo</item>
+        <item>Koweït</item>
+        <item>La Réunion</item>
+        <item>Laos</item>
+        <item>Lesotho</item>
+        <item>Lettonie</item>
+        <item>Liban</item>
+        <item>Libéria</item>
+        <item>Libye</item>
+        <item>Liechtenstein</item>
+        <item>Lituanie</item>
+        <item>Luxembourg</item>
+        <item>Macédoine</item>
+        <item>Madagascar</item>
+        <item>Malaisie</item>
+        <item>Malawi</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malte</item>
+        <item>Maroc</item>
+        <item>Martinique</item>
+        <item>Maurice</item>
+        <item>Mauritanie</item>
+        <item>Mayotte</item>
+        <item>Mexique</item>
+        <item>Moldavie</item>
+        <item>Monaco</item>
+        <item>Mongolie</item>
+        <item>Monténégro</item>
+        <item>Montserrat</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibie</item>
+        <item>Nauru</item>
+        <item>Népal</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigéria</item>
+        <item>Niue</item>
+        <item>Norvège</item>
+        <item>Nouvelle-Calédonie</item>
+        <item>Nouvelle-Zélande</item>
+        <item>Oman</item>
+        <item>Ouganda</item>
+        <item>Ouzbékistan</item>
+        <item>Pakistan</item>
+        <item>Palaos</item>
+        <item>Panama</item>
+        <item>Papouasie-Nouvelle-Guinée</item>
+        <item>Paraguay</item>
+        <item>Pays-Bas</item>
+        <item>Pérou</item>
+        <item>Philippines</item>
+        <item>Pitcairn</item>
+        <item>Pologne</item>
+        <item>Polynésie française</item>
+        <item>Porto Rico</item>
+        <item>Portugal</item>
+        <item>Qatar</item>
+        <item>République centrafricaine</item>
+        <item>République dominicaine</item>
+        <item>République tchèque</item>
+        <item>Roumanie</item>
+        <item>Royaume-Uni</item>
+        <item>Russie</item>
+        <item>Rwanda</item>
+        <item>Sahara occidental</item>
+        <item>Saint-Barthélemy</item>
+        <item>Saint-Christophe-et-Niévès</item>
+        <item>Saint-Marin</item>
+        <item>Saint-Martin (partie française)</item>
+        <item>Saint-Martin (partie néerlandaise)</item>
+        <item>Saint-Pierre-et-Miquelon</item>
+        <item>Sainte-Hélène</item>
+        <item>Sainte-Lucie</item>
+        <item>Samoa</item>
+        <item>Samoa américaines</item>
+        <item>Sao Tomé-et-Principe</item>
+        <item>Sénégal</item>
+        <item>Serbie</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapour</item>
+        <item>Slovaquie</item>
+        <item>Slovénie</item>
+        <item>Somalie</item>
+        <item>Soudan</item>
+        <item>Sri Lanka</item>
+        <item>Suède</item>
+        <item>Suisse</item>
+        <item>Suriname</item>
+        <item>Svalbard et Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Syrie</item>
+        <item>Tadjikistan</item>
+        <item>Taïwan</item>
+        <item>Tanzanie</item>
+        <item>Tchad</item>
+        <item>Terres australes françaises</item>
+        <item>Territoire britannique de l’océan Indien</item>
+        <item>Territoires palestiniens</item>
+        <item>Thaïlande</item>
+        <item>Timor oriental</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinité-et-Tobago</item>
+        <item>Tristan da Cunha</item>
+        <item>Tunisie</item>
+        <item>Turkménistan</item>
+        <item>Turquie</item>
+        <item>Tuvalu</item>
+        <item>Ukraine</item>
+        <item>Uruguay</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Wallis-et-Futuna</item>
+        <item>Yémen</item>
+        <item>Zambie</item>
+        <item>Zimbabwe</item>
+    </string-array>
+    <string name="title_activity_vue_livre">Livre</string>
+    <string name="txtview_livre_emprunt_vue">Emprunté ce livre</string>
+    <string name="date_debut_emprunt_vue_livre">Date de début d\'emprunt</string>
+    <string name="date_fin_emprunt_vue_livre">Date de fin d\'emprunt</string>
+    <string name="title_activity_pret">Prêt</string>
+    <string name="title_activity_emprunt">Emprunt</string>
+    <string name="emprunt_accepte_emprunt_fragment">Accepté</string>
+    <string name="txtview_emprunt_accepte">Emprunt accepté</string>
+    <string name="txtview_preteur_emprunt_fragment">Preteur</string>
+    <string name="title_activity_evenement">Evenement Littéraire</string>
+    <string name="description_evenement_fragment_evenement">Description Événement</string>
+    <string name="title_activity_vue_evenement">Événement</string>
+    <string name="txt_button_emprunter_vue_livre">Emprunter</string>
+    <string name="input_commentaire_vue_livre">Nouveau Commentaire</string>
+    <string name="txt_button_nouveau_commentaire_vue_livre">Nouveau Commentaire</string>
+    <string name="pseudo_utilisateur_vue_livre_fragment">Pseudo Utilisateur</string>
+    <string name="title_activity_coord_banquaire">Coordonnée Banquaire</string>
+    <string name="txtview_carte_banquaire_vide">Aucune carte actuellement</string>
+    <string name="txtview_compte_banquaire_titre">Vos compte banquaire ajouté</string>
+    <string name="txtview_date_peremption_carte_banquaire_fragment">Date de péremption</string>
+    <string name="txtview_num_compte_carte_banquaire_fragment">Numéro de compte</string>
+    <string name="txtview_proprio_carte_banquaire_fragment">Propriétaire</string>
+    <string name="txtview_iban_compte_banquaire_fragment">IBAN</string>
+    <string name="title_activity_ajoute_carte_banquaire">Nouvelle carte Banquaire</string>
+    <string name="txtview_type_carte_coordonne_bancaire">Type de Carte Bancaire</string>
+    <string name="txtview_code_secu_coord_bancaire">Code de sécurité</string>
+    <string name="edittext_code_secu_ajout_carte">Code de sécurité</string>
+    <string name="edittext_numero_carte_ajout_carte">Numéro de carte</string>
+    <string name="edittext_proprio_ajout_carte">Propriétaire de la carte</string>
+    <string-array name="type_carte_banquaire">
+        <item>MasterCard</item>
+        <item>Electron</item>
+        <item>Visa</item>
+        <item> Europay Mastercard Visa</item>
+        <item>Maestro</item>
+    </string-array>
+    <string-array name="mois_date_validite">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="annee_date_validite">
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+    <string name="facebook_app_id">697023200439528</string>
+    <string name="text_switch_empruntable_vue_livre">Empruntable actuellement</string>
+    <string name="title_activity_badge">Badge</string>
+    <string name="txtView_titre_badge_acqui_badge">Badge Acqui</string>
+    <string name="title_activity_ajout_livre">Ajouté un livre</string>
+    <string name="button_text_trouver_titre_ajout_livre">Trouver par Titre</string>
+    <string name="text_button_trouver_isbn_ajout_livre">Trouver par ISBN</string>
+    <string name="title_activity_ajout_livre_final">Ajout des informations sur votre exemplaire
+    </string>
+    <string name="textview_titre_information_ajout_livre_final">Informations sur votre exemplaire</string>
+    <string name="txt_input_nb_exemplaire_ajout_livre_final">Nombre d\'exemplaire de ce livre</string>
+    <string name="txt_button_ajout_final_livre">Finaliser l\'ajout du livre</string>
+    <string name="title_activity_bibliotheque">Bibliothèque</string>
+</resources>

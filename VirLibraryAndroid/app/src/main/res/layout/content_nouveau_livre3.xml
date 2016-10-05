@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="universitblaisepascal.virlibrary.NouveauLivre3Activity"
+    tools:showIn="@layout/activity_nouveau_livre3">
+
+    <RelativeLayout
+        tools:context="universitblaisepascal.virlibrary.NouveauLivre2Activity"
+        tools:showIn="@layout/activity_nouveau_livre2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonValiderNouveauLivre3"
+            android:hint="@string/title_activity_inscription_Valider"
+            android:textAlignment="center"
+            android:layout_below="@+id/swtichPretableNouveauLivre"
+            android:layout_alignRight="@+id/textViewTitrePretable"
+            android:layout_alignEnd="@+id/textViewTitrePretable"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAnnulerNouveauLivre3"
+            android:textAlignment="center"
+            android:hint="@string/inscription_bouton_annuler"
+            android:layout_below="@+id/swtichPretableNouveauLivre"
+            android:layout_alignLeft="@+id/textViewTitrePretable"
+            android:layout_alignStart="@+id/textViewTitrePretable"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonRetourNouveauLivre3"
+            android:layout_alignBottom="@+id/buttonAnnulerNouveauLivre3"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/title_activity_inscription_Retour"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/inputNombreExemplaireNouveauLivre"
+            android:layout_below="@+id/textTitreExemplaire"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="@string/exemplaire_nombre_activity_nouveau_livre3"
+            android:textAlignment="center"
+            android:theme="@style/textCellule" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/inputDateAchatNouveauLivre"
+            android:layout_below="@+id/inputNombreExemplaireNouveauLivre"
+            android:layout_alignRight="@+id/inputNombreExemplaireNouveauLivre"
+            android:layout_alignEnd="@+id/inputNombreExemplaireNouveauLivre"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:hint="@string/exemplaire_date_achat_activity_nouveau_livre3"
+            android:theme="@style/textCellule"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputEtatNouveauLivre"
+            android:layout_below="@+id/inputDateAchatNouveauLivre"
+            android:layout_alignRight="@+id/inputDateAchatNouveauLivre"
+            android:layout_alignEnd="@+id/inputDateAchatNouveauLivre"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/exemplaire_etat_activity_nouveau_livre3"
+            android:textAlignment="center"
+            android:theme="@style/textCellule"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignTop="@+id/textTitreExemplaire"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTitreExemplaire"
+                android:hint="@string/exemplaire_titre_activity_nouveau_livre3"
+                android:textStyle="bold"
+                android:textSize="@dimen/abc_action_bar_content_inset_material"
+                android:layout_gravity="center_horizontal"
+                android:theme="@style/textCellule"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_pretable_nouveau_livre"
+            android:id="@+id/textViewTitrePretable"
+            android:textAlignment="center"
+            android:layout_below="@+id/inputEtatNouveauLivre"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:theme="@style/textCellule"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_switch_pretable_nouveau_livre"
+            android:id="@+id/swtichPretableNouveauLivre"
+            android:layout_below="@+id/textViewTitrePretable"
+            android:layout_alignLeft="@+id/buttonRetourNouveauLivre3"
+            android:layout_alignStart="@+id/buttonRetourNouveauLivre3"
+            android:theme="@style/textCellule"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

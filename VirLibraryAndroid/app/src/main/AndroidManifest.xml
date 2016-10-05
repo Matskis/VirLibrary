@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="universitblaisepascal.virlibrary">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".Profil"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="Bibliothèque"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EmpruntActivity"
+            android:label="Emprunt"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CompteActivity"
+            android:label="Compte"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PreferenceActivity"
+            android:label="Préférence"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InformationActivity"
+            android:label="@string/title_activity_information"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".ServiceLibrary"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ItemListActivity"
+            android:label="@string/title_item_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".InscriptionActivity"
+            android:label="@string/title_activity_inscription"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Inscription2Activity"
+            android:label="@string/title_activity_inscription2"
+            android:parentActivityName=".InscriptionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.InscriptionActivity" />
+        </activity>
+        <activity
+            android:name=".Inscription3Activity"
+            android:label="@string/title_activity_inscription3"
+            android:parentActivityName=".Inscription2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.Inscription2Activity" />
+        </activity>
+        <activity
+            android:name=".NouveauLivreActivity"
+            android:label="@string/title_activity_nouveau_livre"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".NouveauLivre2Activity"
+            android:label="@string/title_activity_nouveau_livre2"
+            android:parentActivityName=".NouveauLivreActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.NouveauLivreActivity" />
+        </activity>
+        <activity
+            android:name=".NouveauLivre3Activity"
+            android:label="@string/title_activity_nouveau_livre3"
+            android:parentActivityName=".NouveauLivre2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.NouveauLivre2Activity" />
+        </activity>
+        <activity android:name=".SearchActivity" />
+        <activity
+            android:name=".VueLivreActivity"
+            android:label="@string/title_activity_vue_livre"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EvenementActivity"
+            android:label="@string/title_activity_evenement"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".VueEvenementActivity"
+            android:label="@string/title_activity_vue_evenement"
+            android:parentActivityName=".EvenementActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.EvenementActivity" />
+        </activity>
+        <activity
+            android:name=".CoordBanquaireActivity"
+            android:label="@string/title_activity_coord_banquaire"
+            android:parentActivityName=".CompteActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.CompteActivity" />
+        </activity>
+        <activity
+            android:name=".AjouteCarteBanquaireActivity"
+            android:label="@string/title_activity_ajoute_carte_banquaire"
+            android:parentActivityName=".CoordBanquaireActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.CoordBanquaireActivity" />
+        </activity>
+        <activity android:name=".FacebookActivity" />
+        <activity
+            android:name=".BadgeActivity"
+            android:label="@string/title_activity_badge"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AjoutLivreActivity"
+            android:label="@string/title_activity_ajout_livre"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AjoutLivreFinalActivity"
+            android:label="@string/title_activity_ajout_livre_final"
+            android:parentActivityName=".AjoutLivreActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.AjoutLivreActivity" />
+        </activity>
+        <activity
+            android:name=".BibliothequeActivity"
+            android:label="@string/title_activity_bibliotheque"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="universitblaisepascal.virlibrary.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

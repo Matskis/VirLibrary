@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="universitblaisepascal.virlibrary.ajouteCarteBanquaireActivity"
+    tools:showIn="@layout/activity_ajoute_carte_banquaire">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/inputProprioCarteBanquaireAjoutCarte"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:hint="@string/edittext_proprio_ajout_carte" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/inputNumeroCarteAjoutCarteBanquaire"
+        android:layout_below="@+id/inputProprioCarteBanquaireAjoutCarte"
+        android:layout_alignRight="@+id/inputProprioCarteBanquaireAjoutCarte"
+        android:layout_alignEnd="@+id/inputProprioCarteBanquaireAjoutCarte"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/edittext_numero_carte_ajout_carte"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/inputCodeSecuriteAjoutCarte"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/edittext_code_secu_ajout_carte"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/inputNumeroCarteAjoutCarteBanquaire"
+        android:layout_alignRight="@+id/inputNumeroCarteAjoutCarteBanquaire"
+        android:layout_alignEnd="@+id/inputNumeroCarteAjoutCarteBanquaire" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTypeCarteBanquaireAjoutCarte"
+        android:layout_below="@+id/spinnerMoisAjoutCarte"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouté la carte"
+        android:id="@+id/buttonAjoutCarte"
+        android:theme="@style/boutonB"
+        android:layout_below="@+id/spinnerTypeCarteBanquaireAjoutCarte"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerMoisAjoutCarte"
+        android:layout_below="@+id/inputCodeSecuriteAjoutCarte"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonAjoutCarte"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/buttonAjoutCarte" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerAnneeAjoutCarte"
+        android:layout_above="@+id/spinnerTypeCarteBanquaireAjoutCarte"
+        android:layout_alignLeft="@+id/buttonAjoutCarte"
+        android:layout_alignStart="@+id/buttonAjoutCarte"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp" />
+
+</RelativeLayout>

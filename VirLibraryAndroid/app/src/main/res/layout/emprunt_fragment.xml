@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    style="@style/Transparent">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        tools:background="#AAA"
+        />
+
+    <TextView
+        android:id="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_alignTop="@+id/avatar"
+        android:textStyle="bold"
+        tools:text="Titre"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prix_livre_activty_nouveau_livre"
+        android:id="@+id/txtPrixAjoutLivreFinal"
+        android:layout_alignBottom="@+id/avatar"
+        android:layout_alignLeft="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_alignStart="@+id/titre_commentaire_vue_livre_fragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ISBN_activity_nouveau_livre2"
+        android:id="@+id/isbn_livre_fragment"
+        android:layout_above="@+id/txtPrixAjoutLivreFinal"
+        android:layout_alignLeft="@+id/txtPrixAjoutLivreFinal"
+        android:layout_alignStart="@+id/txtPrixAjoutLivreFinal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edition_livre_activty_nouveau_livre"
+        android:id="@+id/textView19"
+        android:layout_alignTop="@+id/edition_livre_fragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edition_livre_activty_nouveau_livre"
+        android:id="@+id/edition_livre_fragment"
+        android:layout_below="@+id/txtPrixAjoutLivreFinal"
+        android:layout_alignLeft="@+id/txtPrixAjoutLivreFinal"
+        android:layout_alignStart="@+id/txtPrixAjoutLivreFinal"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nomAuteurNouveauLivre"
+        android:id="@+id/auteur_livre_fragment"
+        android:layout_below="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_alignLeft="@+id/titre_commentaire_vue_livre_fragment"
+        android:layout_alignStart="@+id/titre_commentaire_vue_livre_fragment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtview_emprunt_accepte"
+        android:id="@+id/textView17"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emprunt_accepte_emprunt_fragment"
+        android:id="@+id/switchEmpruntAccepteFragmentEmprunt"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtview_preteur_emprunt_fragment"
+        android:id="@+id/textViewpreteurEmpruntFragment"
+        android:layout_alignTop="@+id/edition_livre_fragment"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_debut_emprunt_vue_livre"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/switchEmpruntAccepteFragmentEmprunt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewDateDebutEmpruntFragmentEmprunt"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_fin_emprunt_vue_livre"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textViewDateFinEmpruntFragmentEmprunt"
+        android:layout_below="@+id/textViewDateDebutEmpruntFragmentEmprunt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

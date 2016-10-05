@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_livre_switch"
+        android:summary="@string/pref_livre_text_partage"
+        android:title="@string/pref_livre_titre_partage"
+        android:fragment="universitblaisepascal.virlibrary.SettingsActivity$LivrePreferenceFragment"/>
+
+    <ListPreference
+        android:defaultValue="180"
+        android:entries="@array/pref_livre_duree_titles"
+        android:entryValues="@array/pref_livre_duree_values"
+        android:key="livre_pref_duree_max"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_livre_duree_max" />
+
+    <ListPreference
+        android:defaultValue="180"
+        android:entries="@array/livre_pref_manage"
+        android:entryValues="@array/livre_pref_manage"
+        android:key="livre_pref_repartager"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/livre_pref_repartager" />
+</PreferenceScreen>

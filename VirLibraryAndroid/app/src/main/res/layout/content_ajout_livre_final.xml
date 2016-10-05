@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titre_commentaire_vue_livre_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                tools:text="Titre"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:textAlignment="center"
+                android:theme="@style/textTitres_UE" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/resume_livre_activty_nouveau_livre"
+                android:id="@+id/resume_livre_fragment"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/titre_commentaire_vue_livre_fragment"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="gravity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ISBN_activity_nouveau_livre2"
+                android:id="@+id/isbn_livre_fragment"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/resume_livre_fragment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prix_livre_activty_nouveau_livre"
+                android:id="@+id/txtPrixAjoutLivreFinal"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/resume_livre_fragment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edition_livre_activty_nouveau_livre"
+                android:id="@+id/edition_livre_fragment"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/txtPrixAjoutLivreFinal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_edition_activity_nouveau_livre2"
+                android:id="@+id/date_edition_livre_fragment"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/edition_livre_fragment"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/langue_livre_activty_nouveau_livre"
+                android:id="@+id/langue_livre_fragment"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/date_edition_livre_fragment"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_titre_information_ajout_livre_final"
+                android:id="@+id/textView15"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                style="@style/textTitres_UE"
+                android:layout_below="@+id/langue_livre_fragment"/>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_switch_empruntable_vue_livre"
+                android:id="@+id/switchEmpruntVueLivre"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView15"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/inputNbExemplaireAjoutLivreFinal"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/txt_input_nb_exemplaire_ajout_livre_final"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/switchEmpruntVueLivre"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputEtatLivreAjoutLivreFinal"
+                android:layout_gravity="center_horizontal"
+                android:hint="État du livre"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/inputNbExemplaireAjoutLivreFinal"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:id="@+id/inputDateAchatLivreAjoutLivreFinal"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:hint="Date d&apos;achat du livre"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/inputEtatLivreAjoutLivreFinal"/>
+
+            <Button
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_button_ajout_final_livre"
+                android:id="@+id/buttonAjoutLivreAjoutLivreFinal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/inputDateAchatLivreAjoutLivreFinal"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
